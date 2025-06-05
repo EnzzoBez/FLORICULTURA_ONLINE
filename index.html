@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores & Encantos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <div class="logo">🌸 Floratta</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home>"></a>Início</a></li>
+                    <li><a href="#products"></a>Flores</a></li>
+                    <li><a href="#contacts"></a>Contato</a><li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Hero-->
+    <selection class="hero" id="home">
+        <div class="container">
+            <h1> Flores que encantam, amor que florece.</h1>
+            <p> Escolha o presente perfeito. Entregamos com muito carinho!</p>
+            <div class="buttons">
+                <a href="#products" class="btm">Ver Catálogo</a>
+                <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn" btn-whatsapp> Fale Conosco</a>
+            </div>
+        </div>
+    </selection>
+    
+    <!--Produtos-->
+    <selection class="products" id="products">
+        <div clas="container">
+            <h2>Nosso Catálogo</h2>
+            <div class="product-grid">
+                
+                <div class=" product-card">
+                    <img src="imagens/buque_rosas.jpg" alt="Buguê de Rosas">
+                    <h3> Buquê de Rosas vermelhas</h3>
+                    <div class="price"> R$149,00</div>
+                    <button onclick="addTocart(1)" class="btn">Adicionar</button>
+                    <button onclick="addToCart('Rosas Vermelhas', 59.90)">Adicionar</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="imagens/vaso_orquideas.jpg" alt="Orquídea">
+            <h3> Vaso de Orquidea</h3>
+            <div class="price"> R$189,90</div>
+            <button onclick="addTocart(2)" class="btn">Adicionar</button>
+            <button onclick="addToCart('Rosas Vermelhas', 59.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagens/cestas-mistas.jpg" alt="Cesta de Flores">
+            <h3> Cestas de Flores</h3>
+            <div class="price"> R$219,90</div>
+            <button onclick="addTocart(3)" class="btn">Adicionar</button>
+            <button onclick="addToCart('Rosas Vermelhas', 59.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imagens/arranjo_lirios.jpg" alt="Arranjo de Lírios">
+            <h3> Arranjo de Lírios</h3>
+            <div class="price"> R$169,90</div>
+            <button onclick="addTocart(4)" class="btn">Adicionar</button>
+            <button onclick="addToCart('Rosas Vermelhas', 59.90)">Adicionar</button>
+        </div>
+    </selection>
+
+    <!--Contato-->
+    <selection clas="contact" id=" contact">
+        <div class="container">
+            <h2> Fale Conosco</h2>
+            <p> Entre em contato pelo Whatsapp para pedidos especiais e entregas.</p>
+            <a href="https://wa./SEUNUMERO" target="_blank">📱 Whatsapp: (54) 99960-7703</a>
+        </div>
+    </selection>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div container>
+            &copy; 2025 Floratta -  Todos os direitos reservaos.
+        </div>
+    </footer>
+
+    <!--Carrinho-->
+    <div class="cart">
+        <h3>🛒 Carrinho</h3>
+        <div class="cart-items"></div>
+        <div class="cart-total">Total: R$ 0.00</div>
+        <div class="cart-butons">
+            <button onclick="checkout()"> Finalizar no whatsapp</button>
+            <button onclick="clearCart()">Limpar</button>
+        </div>
+    </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
